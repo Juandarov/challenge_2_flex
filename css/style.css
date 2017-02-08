@@ -113,3 +113,58 @@ section ul {
 section li {
     padding: 0;
 }
+
+
+
+@media (max-width: 1020px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    /*h1 {
+        width: 100%;
+        text-align: center;
+    }*/
+    header, main, footer {
+        padding: 0.5em;
+    }
+    nav ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer section {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 500px){
+    footer section {
+        width: 100%;
+    }
+}
