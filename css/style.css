@@ -1,12 +1,33 @@
 body {
-
+    background-image: url(../images/bg.png);
 }
 
-header, main, footer, #separateur {
-    width: 900px;
+header, main, footer {
+    width: 1000px;
     margin: auto;
+    padding: 1em 3em;
+    box-sizing: border-box;
+    background-color: white;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header span {
+    display: block;
+    width: 100%;
+}
+
+header a {
+    align-self: flex-end;
+}
+
+nav {
+    width: 100%;
+}
 nav ul {
     list-style: none;
     background-color: #FAFAFA;
@@ -31,10 +52,6 @@ h2 {
     text-align: center;
 }
 
-main {
-    width: 900px;
-}
-
 section span {
     display: block;
     text-align: center;
@@ -46,6 +63,7 @@ section span {
     height: 3em;
     border-top: solid 1px #dadada;
     border-bottom: solid 1px #dadada;
+    width: 100%;
 }
 
 h3 {
@@ -53,22 +71,27 @@ h3 {
     text-align: center;
     background-color: white;
     margin: 0;
-    padding: 1em 0;
+    padding: 0 0 1em 0;
     border-bottom: solid 1px #dadada;
 }
 
 footer {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #FAFAFA;
 }
 
 footer section {
-    width: 20%;
+    width: 25%;
+    background-color: #FAFAFA;
+    padding: 0 1em;
+    box-sizing: border-box;
 }
 
 section ul {
     list-style: none;
+    padding: 0;
+}
+
+section li {
     padding: 0;
 }
